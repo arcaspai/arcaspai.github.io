@@ -1,0 +1,4 @@
+90's cursor effects
+https://github.com/tholman/cursor-effects
+(c) Tholman
+MIT license
