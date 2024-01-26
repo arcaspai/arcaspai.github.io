@@ -1,5 +1,21 @@
+/** all style tags **/
+
+@import url("https://font.elice.io/css?family=Elice+Digital+Baeum");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap");
+
+* {
+    font-family: "Elice Digital Baeum", "Noto Color Emoji", sans-serif;
+    cursor: url() , url(cursor_2.svg), url(./images/bluetag.cur) 1 1, auto;
+    color: #333;
+}
+
+
+
+/** header tags **/
+
 header {
-    height: 50px;
+    height: auto;
+    max-height: 50px;
     padding: 1em;
     display: inline-flex;
     background-color: #333;
@@ -8,14 +24,28 @@ header {
     top: 0;
     left: 0;
     right: 0;
+
 }
 
-nav {
-    align-items: center;
+.navi {
+    align-items: right;
     display: inline;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24pt;
 }
 
-/**
+
+/** main tags **/
+
+main {
+    padding-top: 100px;
+    margin: auto;
+    min-width: 400px;
+    max-width: 700px;
+}
+
+/*
 button {
     display: block;
     background-color: #deeeff;
@@ -27,8 +57,14 @@ button {
 p {
     margin: auto;
 }
-**/
+*/
+
+/** footer tags **/
 
 footer {
+    height: 50px;
+    padding: 1em;
+    
     text-align: center;
 }
+

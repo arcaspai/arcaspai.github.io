@@ -1,4 +1,24 @@
+┌──────┼　ｆｏｎｔｓ　┼──────┐
+
+Elice Digital Baeum
+    https://elice.io/ko/elice/brand
+    Copyright ⓒ 2016 - 2024 Elice Inc. All Rights Reserved.
+    SIL open font license
+
+Noto Color Emoji
+    https://fonts.google.com/noto/specimen/Noto+Color+Emoji
+    Copyright ⓒ Google. All Rights Reserved.
+    SIL open font license
+
+└─────────────────────┘
+
+
+┌──────┼　ｏｔｈｅｒ　┼──────┐
+
+
 90's cursor effects
-https://github.com/tholman/cursor-effects
-(c) Tholman
-MIT license
+    https://github.com/tholman/cursor-effects
+    ⓒ Tholman
+    MIT license
+
+└─────────────────────┘
