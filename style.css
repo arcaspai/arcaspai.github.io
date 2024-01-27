@@ -6,7 +6,6 @@
 * {
     font-family: "Elice Digital Baeum", "Noto Color Emoji", sans-serif;
     cursor: url() , url(cursor_2.svg), url(./images/bluetag.cur) 1 1, auto;
-    color: #333;
 }
 
 
@@ -25,21 +24,40 @@ header {
     left: 0;
     right: 0;
 
+    color: #fff;
+}
+
+.headDetails {
+    position: fixed;
+    top: 10px;
+    right: 30px;
+    align-content: center;
+}
+
+.headSummary {
+    list-style: none;
+    font-size: 24pt;
+    text-align: right;
+}
+
+nav {
+    align-self: center;
+    background-color: #333;
 }
 
 .navi {
-    align-items: right;
-    display: inline;
-    color: #fff;
-    text-decoration: none;
-    font-size: 24pt;
+    padding: 0.5em 40px 0.5em 0;
+    list-style: none;
 }
 
+.naviLink{
+    color: #fff;
+}
 
 /** main tags **/
 
-main {
-    padding-top: 100px;
+main, article {
+    color: #333;
     margin: auto;
     min-width: 400px;
     max-width: 700px;
@@ -59,12 +77,25 @@ p {
 }
 */
 
+a {
+    text-decoration: none;
+    color: #39e;
+}
+
 /** footer tags **/
 
 footer {
     height: 50px;
     padding: 1em;
     
+    color: #333;
     text-align: center;
 }
 
+.footerButton {
+    width: 100px;
+    margin: auto 20px;
+    color: #808080;
+    background-color: #fff;
+    border: 0;
+}
