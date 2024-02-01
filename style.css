@@ -5,9 +5,19 @@
 
 * {
     font-family: "Elice Digital Baeum", "Noto Color Emoji", sans-serif;
-    cursor: url() , url(cursor_2.svg), url(./images/bluetag.cur) 1 1, auto;
+    cursor: url() , url(cursor_2.svg), url("https://github.com/arcaspai/arcaspai.github.io/raw/main/images/bluetag.cur") 1 1, auto;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #333;
+}
+::-webkit-scrollbar-track {
+    background-color: #aaa;
+}
 
 
 /** header tags **/
@@ -29,20 +39,22 @@ header {
 
 .headDetails {
     position: fixed;
-    top: 10px;
-    right: 30px;
+    top: 0px;
+    right: 0px;
     align-content: center;
 }
 
 .headSummary {
     list-style: none;
-    font-size: 24pt;
+    font-size: 20pt;
     text-align: right;
+
+    padding: 18px 50px 9px 0 ;
 }
 
 nav {
     align-self: center;
-    background-color: #333;
+    background-color: #555;
 }
 
 .navi {
@@ -59,7 +71,7 @@ nav {
 main, article {
     color: #333;
     margin: auto;
-    min-width: 400px;
+    min-width: 360px;
     max-width: 700px;
 }
 
@@ -82,11 +94,20 @@ a {
     color: #39e;
 }
 
+
+/*
+.embedDiscord {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+*/
+
 /** footer tags **/
 
 footer {
     height: 50px;
-    padding: 1em;
+    padding: 1em auto;
     
     color: #333;
     text-align: center;
