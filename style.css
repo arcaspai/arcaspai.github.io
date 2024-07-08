@@ -75,14 +75,27 @@ main, article {
     max-width: 700px;
 }
 
-/*
 button {
-    display: block;
-    background-color: #deeeff;
-    border: 1px solid #3e94e1;
+    background-color: #3e94e1;
+    color: #fff;
+    border: 0;
     min-width: 5em;
     margin: 10px auto;
 }
+
+.linksButton1piece {
+    width: 100%;
+}
+
+.linksButton2pieces {
+    width: 50%;
+}
+
+.linksButton3pieces {
+    width: 32%;
+}
+
+/*
 
 p {
     margin: auto;
@@ -91,7 +104,7 @@ p {
 
 a {
     text-decoration: none;
-    color: #39e;
+    color: #3e94e1;
 }
 
 
