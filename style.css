@@ -1,9 +1,181 @@
-/** all style tags **/
+/* global */
 
 @import url("https://font.elice.io/css?family=Elice+Digital+Baeum");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap");
+@import url('https://fastly.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300..700&display=swap");
+@import url("https://github.com/xem/emoji/blob/gh-pages/twemoji.woff");
+
+
+@media screen and (orientation: portrait) {
+    .frame {
+        padding: 0 6px;
+    }
+}
 
 * {
-    font-family: "Elice Digital Baeum", "Noto Color Emoji", sans-serif;
-    cursor: url() , url(cursor_2.svg), url("https://github.com/arcaspai/arcaspai.github.io/raw/main/images/bluetag.cur") 1 1, auto;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Elice Digital Baeum", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
+    background-color: #fcfcfc;
+    color: #2f333d;
+}
+
+main {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 12px 0;
+    position: absolute inherit;
+}
+
+h1 {
+    font-family: "Galmuri11", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding-top: 50px;
+}
+
+a {
+    color: #8aaeff;
+    text-decoration: none;
+}
+
+q, blockquote {
+    font-family: "Galmuri7", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
+}
+
+.dim {
+    width: inherit;
+    height: inherit;
+    background-color: #000;
+    opacity: 50%;
+    position: absolute inherit;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #9088ff;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f2f2f2;
+}
+
+::-webkit-scrollbar-button {
+    box-decoration-break: none;
+}
+
+
+/* index */
+
+
+@media screen and (orientation: portrait) {
+    .index-header video {
+        width: 99vw;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .index-header video {
+        width: 99.8vw;
+    }
+}
+
+
+.index-header {
+    height: 100vh;
+    background-color: #2f333d;
+    background-image: none;
+}
+
+.index-header video {
+    height: inherit;
+    position: absolute;
+    object-fit: cover;
+}
+
+.index-logo {
+    width: 480px;
+    height: 100vh;
+    margin: 0 auto;
+    align-content: center;
+    position: relative;
+    top: -100vh;
+}
+
+/* about */
+
+.about-header {
+    height: 240px;
+    background-color: #2f333d;
+    background-image: none;
+}
+
+
+/* opensource */
+
+@media screen and (orientation: portrait) {
+    .opensource-card-arrange {
+        display: inline;
+
+    }
+    
+    .opensource-card {
+        width: inherit;
+        height: 120px;
+        margin: 0 auto;
+        margin-top: 8px;
+        padding: 16px;
+        background-color: #ececec;
+        border-radius: 6px;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .opensource-card-arrange {
+        display: flex;
+    }
+    
+    .opensource-card {
+        width: 240px;
+        height: 120px;
+        margin: 0 auto;
+        margin-top: 8px;
+        padding: 16px;
+        background-color: #ececec;
+        border-radius: 6px;
+    }
+}
+
+.opensource-header {
+    height: 240px;
+    background-color: #2f333d;
+    background-image: none;
+}
+
+.opensource-h2 {
+    margin-top: 1em;
+}
+
+.opensource-card p {
+    margin-top: 4px;
+    margin-left: 6px;
+}
+
+.opensource-card .first {
+    padding-left: 1em;
+    border-left: 4px solid #474c5a;
+    box-sizing: content-box;
 }
