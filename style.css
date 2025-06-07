@@ -6,13 +6,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300..700&display=swap");
 @import url("https://github.com/xem/emoji/blob/gh-pages/twemoji.woff");
 
-
-@media screen and (orientation: portrait) {
-    .frame {
-        padding: 0 6px;
-    }
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -25,16 +18,9 @@ body {
 }
 
 main {
-    max-width: 860px;
+    max-width: 884px;
     margin: 0 auto;
-}
-
-footer {
-    text-align: center;
-    max-width: 860px;
-    margin: 0 auto;
-    padding: 12px 0;
-    position: absolute inherit;
+    padding: 0 12px;
 }
 
 h1 {
@@ -56,9 +42,101 @@ q, blockquote {
     width: inherit;
     height: inherit;
     background-color: #000;
-    opacity: 50%;
+    opacity: 75%;
     position: absolute inherit;
 }
+
+
+/* nav */
+
+@media (orientation: portrait) {
+    nav {
+        width: 99vw;
+    }
+}
+
+@media (orientation: landscape) {
+    nav {
+        width: 100vw;
+    }
+}
+
+.nav-logo img {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+}
+
+nav details {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+}
+
+nav details[open] {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #fcfcfc;
+}
+
+nav summary {
+    width: 160px;
+    padding: 20px;
+    text-align: right;
+}
+
+nav li {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+nav a {
+    color: #2f333d;
+}
+
+nav .material-symbols-outlined {
+    color: #707686;
+}
+
+nav .selected {
+    color: #8aaeff;
+}
+
+
+/* footer */
+
+footer {
+    position: absolute inherit;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 0;
+    
+    color: #707686;
+    text-align: center;
+    font-size: 8pt;
+}
+
+footer p {
+    padding: 16px 0;
+}
+
+footer .inliner {
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 16px 20px;
+}
+
+footer a {
+    color: #707686;
+}
+
+
+/* scroll bar */
 
 ::-webkit-scrollbar {
     width: 2px;
@@ -80,14 +158,13 @@ q, blockquote {
 
 /* index */
 
-
-@media screen and (orientation: portrait) {
+@media (orientation: portrait) {
     .index-header video {
         width: 99vw;
     }
 }
 
-@media screen and (orientation: landscape) {
+@media (orientation: landscape) {
     .index-header video {
         width: 99.8vw;
     }
@@ -97,7 +174,10 @@ q, blockquote {
 .index-header {
     height: 100vh;
     background-color: #2f333d;
-    background-image: none;
+    background-image: url("./images/banner/main01.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .index-header video {
@@ -115,6 +195,7 @@ q, blockquote {
     position: relative;
     top: -100vh;
 }
+
 
 /* about */
 
