@@ -26,7 +26,7 @@ main {
 h1 {
     font-family: "Galmuri11", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
     font-weight: 600;
-    padding-top: 50px;
+    padding: 50px 0;
 }
 
 a {
@@ -81,13 +81,21 @@ nav details[open] {
     top: 0;
     right: 0;
     z-index: 999;
-    background-color: #fcfcfc;
+    background-color: #9088ff;
 }
 
 nav summary {
     width: 160px;
     padding: 20px;
     text-align: right;
+    color: #707686;
+}
+
+nav details[open] summary {
+    width: 160px;
+    padding: 20px;
+    text-align: right;
+    color: #2f333d;
 }
 
 nav li {
@@ -100,19 +108,15 @@ nav a {
     color: #2f333d;
 }
 
-nav .material-symbols-outlined {
-    color: #707686;
-}
-
 nav .selected {
-    color: #8aaeff;
+    font-weight: 700;
+    border-bottom: 1px dotted #474c5a;
 }
 
 
 /* footer */
 
 footer {
-    position: absolute inherit;
     max-width: 860px;
     margin: 0 auto;
     padding: 24px 0;
