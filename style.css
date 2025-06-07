@@ -84,18 +84,19 @@ nav details[open] {
     background-color: #9088ff;
 }
 
-nav summary {
+nav details summary {
+    list-style: none;
     width: 160px;
-    padding: 20px;
-    text-align: right;
-    color: #707686;
+    height: 24px;
+    margin: 20px;
+
+    background-image: url("./images/icon/density_medium_close.svg");
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 nav details[open] summary {
-    width: 160px;
-    padding: 20px;
-    text-align: right;
-    color: #2f333d;
+    background-image: url("./images/icon/density_medium_open.svg");
 }
 
 nav li {
@@ -105,12 +106,12 @@ nav li {
 }
 
 nav a {
-    color: #2f333d;
+    color: #f2f2f2;
 }
 
 nav .selected {
     font-weight: 700;
-    border-bottom: 1px dotted #474c5a;
+    border-bottom: 1px dotted #f2f2f2;
 }
 
 
