@@ -1,6 +1,7 @@
 /* global */
 
 @import url("https://font.elice.io/css?family=Elice+Digital+Baeum");
+@import url("https://font.elice.io/css?family=Elice+Digital+Coding");
 @import url('https://fastly.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300..700&display=swap");
@@ -12,7 +13,7 @@
 }
 
 body {
-    font-family: "Elice Digital Baeum", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
+    font-family: "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
     background-color: #fcfcfc;
     color: #2f333d;
 }
@@ -25,8 +26,19 @@ main {
 
 h1 {
     font-family: "Galmuri11", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
-    font-weight: 600;
     padding-top: 48px;
+}
+
+h2, h3{
+    font-family: "Galmuri11", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+h4, h5, h6{
+    font-family: "Galmuri9", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-top: 16px;
 }
 
 a {
@@ -36,6 +48,11 @@ a {
 
 q, blockquote {
     font-family: "Galmuri7", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
+}
+
+code {
+    background-color: #eee;
+    font-family: "Elice Digital Coding", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
 }
 
 .dim {
@@ -110,24 +127,27 @@ nav a {
 
 nav .selected {
     font-weight: 700;
-    border-bottom: 1px dotted #f2f2f2;
+    border-bottom: 2px dotted #f2f2f2;
 }
 
 
 /* footer */
 
 footer {
-    max-width: 860px;
+    position: absolute;    
+    width: 100%;
     margin: 0 auto;
     padding: 24px 0;
     
     color: #707686;
     text-align: center;
+    
+    font-family: "Elice Digital Baeum", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
     font-size: 8pt;
 }
 
 footer p {
-    padding: 16px 0;
+    padding-top: 16px;
 }
 
 footer .inliner {
@@ -190,6 +210,13 @@ footer a {
     object-fit: cover;
 }
 
+.index-header p {
+    text-align: center;
+    color: #f2f2f2;
+    
+    font-family: "Elice Digital Baeum", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
+}
+
 .index-logo {
     width: 95%;
     max-width: 480px;
@@ -219,14 +246,33 @@ footer a {
     border-left: 4px solid #474c5a;
 }
 
-.about-section h3, .about-section p {
-    padding-top: 0.5em;
+.about-section p {
+    padding-top: 16px;
+}
+
+.about-logo {
+    width: 360px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.about-button {
+    width: 240px;
+    margin: 20px auto 0 auto;
+    border-radius: 4px;
+    background-color: #9088ff;
+    text-align: center;
+}
+
+.about-button p {
+    padding: 8px;
+    color: #f2f2f2;
 }
 
 @media screen and (orientation: portrait) {
     .color-card-arrange {
-        display: inline;
-
+        display: block;
+        margin-top: 16px;
     }
     
     .color-card {
@@ -250,6 +296,7 @@ footer a {
 @media screen and (orientation: landscape) {
     .color-card-arrange {
         display: flex;
+        margin-top: 16px;
     }
     
     .color-card {
@@ -270,18 +317,26 @@ footer a {
     }
 }
 
-.color-card h4, .color-card p {
-    margin-top: 4px;
-    margin-left: 6px;
+.color-card h4 {
+    padding-top: 4px;
+    padding-left: 6px;
+    
+    font-family: "Elice Digital Baeum", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
+    font-weight: 700;
 }
 
 .color-card p {
+    padding-top: 4px;
+    padding-left: 6px;
     padding-right: 0.7ex;
+    
+    font-family: "Elice Digital Baeum", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
+    font-weight: 500;
 }
 
 
 
-/* opensource */
+/* works */
 
 @media screen and (orientation: portrait) {
     .opensource-card-arrange {
@@ -316,7 +371,7 @@ footer a {
     }
 }
 
-.opensource-header {
+.works-header {
     height: 240px;
     background-color: #2f333d;
     background-image: none;
