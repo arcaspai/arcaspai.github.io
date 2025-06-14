@@ -336,39 +336,31 @@ footer a {
 
 
 
-/* works */
+/* works (index) */
 
 @media screen and (orientation: portrait) {
-    .opensource-card-arrange {
-        display: inline;
-
-    }
-    
-    .opensource-card {
-        width: inherit;
-        height: 120px;
-        margin: 0 auto;
-        margin-top: 8px;
-        padding: 16px;
-        background-color: #ececec;
-        border-radius: 6px;
+    .works-card-arrange {
+        display: flex;
+        flex-direction: column;
     }
 }
 
 @media screen and (orientation: landscape) {
-    .opensource-card-arrange {
+    .works-card-arrange {
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
+}
+
+.works-card {
+    width: 240px;
+
+    margin: 0 auto;
+    margin-top: 8px;
+    padding: 16px;
     
-    .opensource-card {
-        width: 240px;
-        height: 120px;
-        margin: 0 auto;
-        margin-top: 8px;
-        padding: 16px;
-        background-color: #ececec;
-        border-radius: 6px;
-    }
+    border-radius: 6px;
 }
 
 .works-header {
@@ -377,16 +369,16 @@ footer a {
     background-image: none;
 }
 
-.opensource-h2 {
+.works-h2 {
     margin-top: 1em;
 }
 
-.opensource-card p {
+.works-card p {
     margin-top: 4px;
     margin-left: 6px;
 }
 
-.opensource-card .first {
+.works-card .first {
     padding-left: 1em;
     border-left: 4px solid #474c5a;
     box-sizing: content-box;
