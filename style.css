@@ -13,7 +13,7 @@
 }
 
 body {
-    font-family: "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
+    font-family: "Elice Digital Baeum", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
     background-color: #fcfcfc;
     color: #2f333d;
 }
@@ -39,6 +39,14 @@ h4, h5, h6{
     font-family: "Galmuri9", "GalmuriMono9", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
     font-weight: 400;
     padding-top: 16px;
+}
+
+main p {
+    padding-top: 16px;
+}
+
+section {
+    padding: 20px 28px 0 28px;
 }
 
 a {
@@ -187,20 +195,39 @@ footer a {
     .index-header video {
         width: 99vw;
     }
+    
+    .index-works-arrange {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .old-work {
+        width: 100%;
+    }
 }
 
 @media screen and (orientation: landscape) {
     .index-header video {
         width: 99.8vw;
     }
+    
+    .index-works-arrange {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .old-work {
+        width: 400px;
+    }
 }
 
 .index-header {
     height: 100vh;
     background-color: #2f333d;
-    background-image: url("./images/banner/main01.png");
+    background-image: url("./images/banner/main02.png");
     background-size: cover;
-    background-position: center;
+    background-position: right;
     background-attachment: fixed;
 }
 
@@ -213,8 +240,6 @@ footer a {
 .index-header p {
     text-align: center;
     color: #f2f2f2;
-    
-    font-family: "Elice Digital Baeum", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
 }
 
 .index-logo {
@@ -227,6 +252,11 @@ footer a {
     top: -100vh;
 }
 
+.index-works {
+    text-align: center;
+    padding-top: 20px;
+}
+
 
 /* about */
 
@@ -236,18 +266,10 @@ footer a {
     background-image: none;
 }
 
-.about-section {
-    padding: 20px 28px 0 28px;
-}
-
 .about-section blockquote {
     margin: 0.5em 0;
     padding-left: 0.5em;
     border-left: 4px solid #474c5a;
-}
-
-.about-section p {
-    padding-top: 16px;
 }
 
 .about-logo {
@@ -358,7 +380,6 @@ footer a {
 
     margin: 0 auto;
     margin-top: 8px;
-    padding: 16px;
     
     border-radius: 6px;
 }
