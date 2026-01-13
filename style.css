@@ -1,13 +1,12 @@
 /* global */
 
+@import url("https://cdn.jsdelivr.net/gh/sun-typeface/SUITE@2/fonts/variable/woff2/SUITE-Variable.css");
 @import url("https://font.elice.io/css?family=Elice+Digital+Baeum");
 @import url("https://font.elice.io/css?family=Elice+Digital+Coding");
 @import url('https://fastly.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300..700&display=swap");
 @import url("https://github.com/xem/emoji/blob/gh-pages/twemoji.woff");
-@import url("https://cdn.jsdelivr.net/gh/sun-typeface/SUITE@2/fonts/variable/woff2/SUITE-Variable.css");
-
 
 * {
     margin: 0;
@@ -15,10 +14,15 @@
 }
 
 body {
-    font-family: "SUITE Variable", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
+    font-family: "SUITE Variable", "Elice Digital Baeum", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
     background-color: #fcfcfc;
     color: #2f333d;
-    font-weight: 400;
+}
+
+main {
+    max-width: 884px;
+    margin: 0 auto;
+    padding: 0 12px;
 }
 
 h1 {
@@ -28,11 +32,17 @@ h1 {
 
 h2, h3{
     font-family: "Galmuri11", "GalmuriMono11", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
+    font-weight: 400;
     padding-top: 20px;
 }
 
 h4, h5, h6{
     font-family: "Galmuri9", "GalmuriMono9", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-top: 16px;
+}
+
+main p {
     padding-top: 16px;
 }
 
@@ -60,11 +70,6 @@ code {
     background-color: #000;
     opacity: 75%;
     position: absolute inherit;
-}
-
-::selection {
-    color: #f2f2f2;
-    background-color: #8aaeff;
 }
 
 /* nav */
@@ -135,31 +140,10 @@ nav .selected {
 }
 
 
-/* header */
-
-header {
-    height: 240px;
-    background-color: #2f333d;
-}
-
-
-/* main */
-
-main {
-    max-width: 884px;
-    margin: 0 auto;
-    padding: 0 12px;
-}
-
-main p {
-    padding-top: 16px;
-}
-
-
 /* footer */
 
 footer {
-    position: absolute;
+    position: absolute;    
     width: 100%;
     margin: 0 auto;
     padding: 24px 0;
@@ -167,9 +151,8 @@ footer {
     color: #707686;
     text-align: center;
     
-    font-family: "SUITE Variable", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
+    font-family: "Elice Digital Baeum", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
     font-size: 8pt;
-    font-weight: 500;
 }
 
 footer p {
@@ -211,48 +194,42 @@ footer a {
 
 @media screen and (orientation: portrait) {
     .index-header video {
-        width: 99vw;
+        width: 99.5vw;
+    }
+    
+    .index-works-arrange {
+        display: flex;
+        flex-direction: column;
     }
 
-    .index-header .header-block {
-        display: block;
-
+    .old-work {
         width: 100%;
-        height: 50%;
-    }
-
-    .header-block1 .block3 {
-        background-color: #8aaeff;
     }
 }
 
 @media screen and (orientation: landscape) {
     .index-header video {
-        width: 99.8vw;
-    }
-
-    .index-header .header-block {
-        display: inline-block;
-
-        width: 50%;
-        height: 100vh;
-    }
-
-    .header-block1 .block4 {
-        background-color: #8aaeff;
+        width: 99.9vw;
     }
     
+    .index-works-arrange {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .old-work {
+        width: 400px;
+    }
 }
 
 .index-header {
     height: 100vh;
     background-color: #2f333d;
-    background-image: url("./images/banner/main02.png");
+    background-image: url("./images/banner/banner_index.png");
     background-size: cover;
     background-position: right;
     background-attachment: fixed;
-
-    font-size: 0;
 }
 
 .index-header video {
@@ -261,80 +238,19 @@ footer a {
     object-fit: cover;
 }
 
+.index-header p {
+    text-align: center;
+    color: #f2f2f2;
+}
+
 .index-logo {
     width: 95%;
+    max-width: 480px;
     height: 100vh;
-    margin: 0;
-    align-content: end;
+    margin: 0 auto;
+    align-content: center;
     position: relative;
-    top: -90vh;
-    right: -5vw;
-}
-
-.index-header p {
-    text-align: right;
-    color: #00000000;
-    font-size: 240pt;
-    font-weight: 600;
-    
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #fcfcfc
-}
-
-.header-block div {
-    display: inline-block;
-    width: 33.333%;
-    height: 33.333%;
-
-    background-position: center;
-    background-size: cover;
-}
-
-.header-block1 .block2 {
-    background-color: #f2f2f2;
-    background-image: url(./images/banner/mainbanner.png);
-}
-
-.header-block1 .block5 {
-    background-color: #e3aeff;
-}
-
-.header-block1 .block7 {
-    background-color: #f2f2f2;
-    background-image: url(./images/banner/mainbanner.png);
-}
-
-.header-block1 .block9 {
-    background-color: #9088ff;
-}
-
-.header-block2 .block1 {
-    background-color: #e3aeff;
-}
-
-.header-block2 .block2 {
-    background-color: #8aaeff;
-}
-
-.header-block2 .block4 {
-    width: 66.666%;
-    background-color: #f2f2f2;
-    background-image: url(./images/banner/mainbanner.png);
-}
-
-.header-block2 .block5 {
-    background-color: #9088ff;
-}
-
-.header-block2 .block7 {
-    width: 66.666%;
-
-    background-color: #f2f2f2;
-    background: linear-gradient(135deg, #e3aeff, #8aaeff);
-}
-
-.index-main {
-    height: 90vh;
+    top: -100vh;
 }
 
 .index-works {
