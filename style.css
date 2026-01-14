@@ -14,7 +14,7 @@
 }
 
 body {
-    font-family: "SUITE Variable", "Elice Digital Baeum", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
+    font-family: "SUITE Variable", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
     background-color: #fcfcfc;
     color: #2f333d;
 }
@@ -26,19 +26,14 @@ main {
 }
 
 h1 {
-    font-family: "Galmuri11", "GalmuriMono11", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
     padding-top: 48px;
 }
 
 h2, h3{
-    font-family: "Galmuri11", "GalmuriMono11", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    padding-top: 20px;
+    padding-top: 24px;
 }
 
 h4, h5, h6{
-    font-family: "Galmuri9", "GalmuriMono9", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
-    font-weight: 400;
     padding-top: 16px;
 }
 
@@ -143,20 +138,15 @@ nav .selected {
 /* footer */
 
 footer {
-    position: absolute;    
     width: 100%;
     margin: 0 auto;
     padding: 24px 0;
+    bottom: 0;
     
     color: #707686;
     text-align: center;
     
-    font-family: "Elice Digital Baeum", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
     font-size: 8pt;
-}
-
-footer p {
-    padding-top: 16px;
 }
 
 footer .inliner {
