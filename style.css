@@ -67,6 +67,14 @@ code {
     position: absolute inherit;
 }
 
+.galmuri {
+    font-family: "Galmuri7", "GalmuriMono7", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
+}
+
+.elice {
+    font-family: "Elice Degital Baeum", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
+}
+
 /* nav */
 
 @media (orientation: portrait) {
@@ -259,14 +267,73 @@ footer a {
 
 /* about */
 
+@media screen and (orientation: portrait) {
+    .profile {
+        display: block;
+        margin: auto;
+    }
+
+    .pfp, .profile ul {
+        margin: auto;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .profile {
+        display: flex;
+    }
+}
+
 .about-header {
     background-image: url("./images/decoration/banner-about.png");
 }
 
-.about-section blockquote {
+.about-title {
     margin: 0.5em 0;
     padding-left: 0.5em;
     border-left: 4px solid #474c5a;
+}
+
+.profile {
+    padding: 48px;
+}
+
+.pfp {
+    width: 200px;
+    height: 200px;
+
+    background-color: #2f333d;
+    background-image: url("./images/decoration/redder-portrait.png");
+    background-size: 360px;
+    background-position: top; 
+    background-repeat: no-repeat;
+
+    border: 2px solid #e3aeff;
+    border-radius: 999px;
+}
+
+.profile ul {
+    list-style: none;
+    padding-left: 36px;
+
+    font-weight: 700;
+}
+
+.profile ul li {
+    padding-top: 12px;
+}
+
+.profile ul li ul {
+    font-weight: 400;
+}
+
+.profile ul li ul li {
+    padding-top: initial;
+    padding-left: 60px;
+}
+
+.profile .galmuri {
+    font-weight: 400;
 }
 
 .about-logo {
