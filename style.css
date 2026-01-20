@@ -135,6 +135,16 @@ nav .selected {
 }
 
 
+/* header */
+
+header {
+    height: 240px;
+    background-color: #2f333d;
+
+    background-size: cover;
+    background-position: center;
+}
+
 /* footer */
 
 footer {
@@ -215,9 +225,7 @@ footer a {
 
 .index-header {
     height: 100vh;
-    background-color: #2f333d;
-    background-image: url("./images/decoration/banner.png");
-    background-size: cover;
+    background-image: url("./images/decoration/banner-index.png");
     background-position: right;
     background-attachment: fixed;
 }
@@ -252,9 +260,7 @@ footer a {
 /* about */
 
 .about-header {
-    height: 240px;
-    background-color: #2f333d;
-    background-image: none;
+    background-image: url("./images/decoration/banner-about.png");
 }
 
 .about-section blockquote {
@@ -348,10 +354,9 @@ footer a {
 }
 
 
-
-/* redirections */
-.redirections {
-    height: 100vh;
+/* etc */
+.error, .redirections {
+    height: 90vh;
     text-align: center;
     align-content: center;
 }
