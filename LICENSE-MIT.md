@@ -1,4 +1,3 @@
-# Website Code
 The source code in this repository is licensed under the MIT License.
 
 The MIT License (MIT)
