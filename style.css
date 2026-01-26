@@ -355,13 +355,14 @@ footer a {
     color: #f2f2f2;
 }
 
+/* color card */
+
 @media screen and (orientation: portrait) {
     .color-card-arrange {
         display: block;
-        margin-top: 16px;
     }
     
-    .color-card {
+    .color-card, .color-card-arrange a {
         width: inherit;
         height: 96px;
 
@@ -382,10 +383,9 @@ footer a {
 @media screen and (orientation: landscape) {
     .color-card-arrange {
         display: flex;
-        margin-top: 16px;
     }
     
-    .color-card {
+    .color-card, .color-card-arrange a {
         width: 160px;
         height: 160px;
 
@@ -403,6 +403,14 @@ footer a {
     }
 }
 
+.color-card-arrange {
+    margin: 16px auto;
+}
+
+.color-card-arrange a {
+    color: #2f333d;
+}
+
 .color-card h4 {
     padding-top: 4px;
     padding-left: 6px;
@@ -418,6 +426,10 @@ footer a {
     
     font-family: "Elice Digital Baeum", "Noto Sans", "Twemoji Mozilla", "Noto Emoji", Arial, Helvetica, sans-serif;
     font-weight: 500;
+}
+
+.color-card strong {
+    padding-left: 0.5ex;
 }
 
 
