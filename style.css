@@ -433,6 +433,24 @@ footer a {
 }
 
 
+/* works */
+
+.works-header {
+    background-image: url("./images/decoration/banner-works.png");
+}
+
+
+/* guideline */
+
+.guideline-header {
+    background-image: url("./images/decoration/banner-guideline.png");
+}
+
+.guideline-list {
+    padding: 1em 2em;
+}
+
+
 /* etc */
 .error, .redirections {
     height: 90vh;
